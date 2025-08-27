@@ -18,10 +18,15 @@
 ## **`Componentes`**
 
 -Sensor lluvia (modelo por definir)
+
 -Sensor luz (modelo por definir)
+
 -Sensor de viento (modelo por definir)
+
 -Tira LED rgb (modelo por definir)
+
 -Boton para prender y apagar (modelo por definir)
+
 -Una carcaza diseñada en 3D que contenga los actuadores del sistema de manera estetica y compacta para poder ser instalada en cualquier parte.
 
 
