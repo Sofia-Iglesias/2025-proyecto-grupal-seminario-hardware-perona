@@ -1,4 +1,4 @@
-# **`lÁMPARA AMBIENTADORA`**
+# **`Lámpara ambientadora`**
 
 `Tecnología de los Sistemas de Información - Seminario Avanzado`  
 `Ciclo Lectivo 2025`
