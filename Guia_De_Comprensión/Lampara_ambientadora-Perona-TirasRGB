@@ -4,7 +4,8 @@ Es un actuador cuyo objetivo es producir Luz
 
 **¿Qué tipo de señal utiliza para comunicarse con Arduino?**
 
-utiliza una señal digital, dependiendo de que pines reciben o no reciben energia produce un color u ottro
+utiliza una señal digital, dependiendo de que información le envies por dicho pin digital (debe ser PWM) se encenderán algunos LEDs
+de un color u otro
 
 **¿Cuál es el rango de valores que puede entregar o recibir el componente?**
 
@@ -14,25 +15,31 @@ Va de 0 a 255 por cada color (rojo, verde o azul)
 
 Tiene 4 pines
 -Pin gnd: Va al polo  negativo para cerrar el circuito
--Pin R: Se usa paracontrolar la potencia del color rojo
--Pin G: Se usa paracontrolar la potencia del color verde
--Pin B: Se usa paracontrolar la potencia del color azul
-
+-Pin Pin de datos: Debe ser PWM, se utiliza para indicar de que color se deben de enscender los LEDs
+-Pin +5V: Alimentación de la tira, va conectado a una resistencia de 330ohms primero
 Dependiendo de como se utilicen estos pines (que se tienen que conectar a un pin PWM) se pude crear una
 amplia gama de colores
 
 **¿Qué pin o pines de Arduino utilizan para conectarlo? ¿Por qué elegiste esos pines?
 Dibujá y explicá brevemente el esquema de conexión del componente con Arduino (incluyendo resistencias si son necesarias).**
 
+El pin de datos que se utiliza es el pin 3, ya que este es un pin PWM, que es obligatorio para controlar la tira
 
+Link al dibujo (en realidad es una simulación en tinkercad): https://www.tinkercad.com/things/2BFx1T73f3i-circuito-de-tiras-led-rgb-para-tp-de-hardware/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard
 
 **¿Cuál es el principio de funcionamiento del componente?**
 
-
+El principio de funcionamiento es el siguiente:
+Cada tira LED de neopixeles tiene incluida dentro de sí un microcontrolador que funciona aparte del controlador del arduino.
+Este microcontrolador sirve para gestionar todos los LEDs de la tira según los datos que entran del pin de información. La razon por la
+que se usa este sistema es que gracias a este segundo controlador se puede utilizar un unico cable que va del arduino al componente
+con una orden que es interpretada como un "comando", en base a este, la propia tira de neopixeles gestiona que pixeles prender y como. En
+resumen, simplifica la conexión.
 
 **¿Utiliza alguna librería particular para programarlo?**
 
-
+Si, utiliza <Adafruit_NeoPixel.h> que contiene todas las funciones necesarias para controlar todos los aspectos de los LEDs (color, brillo
+orden de encendido, etc).
 
 **¿Cómo se interpreta el dato de entrada o salida del componente en el programa?**
 
@@ -40,19 +47,22 @@ Dibujá y explicá brevemente el esquema de conexión del componente con Arduino
 
 **¿Qué limitaciones o precauciones eléctricas hay que tener en cuenta?**
 
-
+No muchas, pero si es necesario utilizar un resistor para asegurarse de que no se queme nada
 
 **¿Cómo verificarías que el componente funciona correctamente antes de incorporarlo al proyecto final?**
 
-
+Primero, simulo la conexión y el codigo que voy a usar en el propio tinkercad, que ya tiene estos componentes disponibles. Si ahí funciona,
+conectaré los componentes fisicamente, si ocurre una falla como una luz parpadeando o algunos pixeles muertos, sabré que es un problema de
+hardware y no de software
 
 **Simular en Tinkercad e incluir el link de la simulación.**
 
-
+https://www.tinkercad.com/things/2BFx1T73f3i-circuito-de-tiras-led-rgb-para-tp-de-hardware/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard
 
 **En caso de aplicar, ¿qué valor o lectura esperás obtener en la simulación si el componente funciona correctamente?**
 
-
+Este componente no da valores de lectura, es solamente un actuador
 
 **¿Cómo podría fallar el componente o cómo detectarías un mal funcionamiento en el código o en el circuito?**
+
 
