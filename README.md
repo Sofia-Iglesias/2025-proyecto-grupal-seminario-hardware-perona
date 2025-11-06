@@ -19,11 +19,11 @@
 
 -Sensor lluvia (modelo por definir)
 
--Sensor luz (modelo por definir)
+-Fotoresistor
 
 -Sensor de viento (modelo por definir)
 
--Tira LED rgb (modelo por definir)
+-Tira NeoPixel de 8 piceles
 
 -Boton para prender y apagar (modelo por definir)
 
