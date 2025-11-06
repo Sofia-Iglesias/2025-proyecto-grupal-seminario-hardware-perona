@@ -23,7 +23,7 @@
 
 -Sensor de viento (modelo por definir)
 
--Tira NeoPixel de 8 piceles
+-Tira NeoPixel de 8 pixeles
 
 -Boton para prender y apagar (modelo por definir)
 
