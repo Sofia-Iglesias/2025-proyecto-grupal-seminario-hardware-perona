@@ -16,7 +16,7 @@ Va de 0 a 255 por cada color (rojo, verde o azul)
 Tiene 4 pines
 -Pin gnd: Va al polo  negativo para cerrar el circuito
 -Pin Pin de datos: Debe ser PWM, se utiliza para indicar de que color se deben de enscender los LEDs
--Pin +5V: Alimentación de la tira, va conectado a una resistencia de 330ohms primero
+-Pin +5V: Alimentación de la tira
 Dependiendo de como se utilicen estos pines (que se tienen que conectar a un pin PWM) se pude crear una
 amplia gama de colores
 
@@ -47,13 +47,13 @@ orden de encendido, etc).
 
 **¿Qué limitaciones o precauciones eléctricas hay que tener en cuenta?**
 
-No muchas, pero si es necesario utilizar un resistor para asegurarse de que no se queme nada
+No muchas, pero si hay que manipularlo con precaución, a algunas personas se les ha roto
 
 **¿Cómo verificarías que el componente funciona correctamente antes de incorporarlo al proyecto final?**
 
 Primero, simulo la conexión y el codigo que voy a usar en el propio tinkercad, que ya tiene estos componentes disponibles. Si ahí funciona,
 conectaré los componentes fisicamente, si ocurre una falla como una luz parpadeando o algunos pixeles muertos, sabré que es un problema de
-hardware y no de software
+hardware y no de software. Si en cambio lo que falla es la simulación, lo mas probable es que sea un error en el programa.
 
 **Simular en Tinkercad e incluir el link de la simulación.**
 
@@ -65,4 +65,6 @@ Este componente no da valores de lectura, es solamente un actuador
 
 **¿Cómo podría fallar el componente o cómo detectarías un mal funcionamiento en el código o en el circuito?**
 
-
+Un mal funcionamiento en el codigo puede detectarse imprimiendo en la consola cada paso que hace el componente. Si en algún momento 
+no inicia una secuencia cuando es debido, se vería fácilmente. Un fallo en el circuito quizás seria menos evidente, pero si la tira LED 
+no funciona se puede verificar la continuidad o valores como voltaje o corriente con un tester.
