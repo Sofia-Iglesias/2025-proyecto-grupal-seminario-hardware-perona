@@ -1,56 +1,71 @@
 ¿Qué tipo de dispositivo es (sensor o actuador)? Explicá brevemente su función principal.
 
-
+Es un sensor de luz. Funciona como una resistor variable que varía su resistencia en base a la cantidad de luz que recibe, cuanto
+mas luz le llega, mas disminuye su resistencia.
 
 ¿Qué tipo de señal utiliza para comunicarse con Arduino?
 
-
+Utiliza una señal analogica
 
 ¿Cuál es el rango de valores que puede entregar o recibir el componente?
 
-
+El rango de valores (teóricos) que puede entregar va desde 0 a 1023
 
 ¿Qué pines de conexión tiene el componente? Ennumerar y describir su función.
 
-
+El componente tiene solo dos terminales, una debe ir conectada al pin de 5V y la otra a un divisor de voltaje y de ahí
+a GND.
 
 ¿Qué pin o pines de Arduino utilizan para conectarlo? ¿Por qué elegiste esos pines?
 
-
+Pin GND: Se utiliza para cerrar el circuito
+Pin 5V: alimenta el circuito
+Pin A5: Pin analógico que registra la lectura (desde el divisor de voltaje). Elegí este porque debía ser uno analógico si o si. Cualquiera
+            de ellos serviría
 
 Dibujá y explicá brevemente el esquema de conexión del componente con Arduino (incluyendo resistencias si son necesarias).
 
+Dibujo: https://drive.google.com/file/d/1e0Bq-7N8cRGvtG8c3wvnRGhHY-Y-U3-y/view?usp=sharing
+
+Esquema de conexión: El fotoresistor tiene una de sus terminales directamente conectada al pin de 5V del arduino, mientras que la otra
+está conectada a un "divisor de tensión". Que es una resistencia fija conectada en serie al fotoresistorde tal manera que el voltaje
+que se puede medir entre ambas resistencias y GND es el valor de entrada que se toma en A5
 
 
 ¿Cuál es el principio de funcionamiento del componente?
 
-
+El componente va a disminuir su resistencia a medida que mas luz inside sobre él, dando un valor mas alto en voltaje a medida que recibe
+mas y mas luz.
 
 ¿Utiliza alguna librería particular para programarlo?
 
-
+No
 
 ¿Cómo se interpreta el dato de entrada o salida del componente en el programa?
 
-
+El dato se interpreta como una entrada analogica en forma de número natural (positivo y sin coma) que va de 0 a 1023 (teórico)
 
 ¿Qué limitaciones o precauciones eléctricas hay que tener en cuenta?
 
-
+Colocar un divisor de voltaje bien hecho, con una resistencia fija de 10Kohms en serie con el fotoresistor
 
 ¿Cómo verificarías que el componente funciona correctamente antes de incorporarlo al proyecto final?
 
-
+Imprimo en la consola todos los valores que da dependiendo de la luz que le asigno en el simulador. Si está dentro del rango esperado,
+entonces funciona correctamente
 
 Simular en Tinkercad e incluir el link de la simulación. 
 
-
+simulación: https://www.tinkercad.com/things/4RVcV27Zt9U-smashing-sango-tumelo/editel
 
 En caso de aplicar, ¿qué valor o lectura esperás obtener en la simulación si el componente funciona correctamente?
 
-
+El rango de lectura que llega va de 53 a 974
 
 ¿Cómo podría fallar el componente o cómo detectarías un mal funcionamiento en el código o en el circuito?
 
+1. No regístra lectura
+2. La lectura es poco precisa (da muchos saltos)
+3. el rango de valores posibles es demasiado corto.
 
 
