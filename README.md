@@ -13,7 +13,8 @@
 
 ## **`Descripción del Proyecto`**
 
-`Explicar en qué consiste y qué se busca lograr. Completar una vez definido el proyecto.`
+Este proyecto busca crear un dispositivo que se adapte a tu ambiente, no distorcionando la luz ambiental sino que acompañandola. Para eso, busca ver las condiciones ambientales en cada
+momento y de ahí cambiar el patrón de colores.
 
 ## **`Componentes`**
 
