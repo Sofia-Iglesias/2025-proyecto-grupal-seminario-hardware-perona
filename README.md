@@ -17,7 +17,7 @@
 
 ## **`Componentes`**
 
--Sensor lluvia (modelo por definir)
+-Sensor lluvia
 
 -Fotoresistor
 
@@ -28,27 +28,17 @@
 -Una carcaza diseñada en 3D que contenga los actuadores del sistema de manera estetica y compacta para poder ser instalada en cualquier parte. debe de tener un "compartimiento" que contenga la tira LED con un difusor de luz para que sea estetico
 
 
-`Completar una vez definido el proyecto.`
+
 
 ## **`Requisitos`**
 
-- `Software necesario`  
-- `Librerías`  
-- `Hardware adicional`
-
-`Completar una vez definido el proyecto.`
+Utiliza la libreria <Adafruit_Neopixel.h>
 
 ## **`Etapas del proyecto`**
 ### Etapa 1:
-- `Acción 1`
-- `Acción 2`
+- Completar la guía de comprensión de los componentes
+- Simular todo el proyecto en tinkercad
 
 ### Etapa 2:
-- `Acción 1`
-- `Acción 2`
-
-## **`Extras`**
-
-- `Extra 1`  
-- `Extra 2`  
-- `Extra 3`
+- Crear la carcaza fisicamente
+- Construir en la vida real
