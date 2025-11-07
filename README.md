@@ -21,13 +21,11 @@
 
 -Fotoresistor
 
--Sensor de viento (modelo por definir)
-
 -Tira NeoPixel de 8 pixeles
 
--Boton para prender y apagar (modelo por definir)
+-Boton para prender y apagar
 
--Una carcaza diseñada en 3D que contenga los actuadores del sistema de manera estetica y compacta para poder ser instalada en cualquier parte.
+-Una carcaza diseñada en 3D que contenga los actuadores del sistema de manera estetica y compacta para poder ser instalada en cualquier parte. debe de tener un "compartimiento" que contenga la tira LED con un difusor de luz para que sea estetico
 
 
 `Completar una vez definido el proyecto.`
