@@ -18,6 +18,8 @@ momento y de ahí cambiar el patrón de colores.
 
 ## **`Componentes`**
 
+-Anemómetro
+
 -Sensor lluvia
 
 -Fotoresistor
