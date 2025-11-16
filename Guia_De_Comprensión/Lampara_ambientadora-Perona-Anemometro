@@ -1,0 +1,60 @@
+¿Qué tipo de dispositivo es (sensor o actuador)? Explicá brevemente su función principal.
+
+Es un sensor cuya función es detectar la velocidad del viento.
+
+¿Qué tipo de señal utiliza para comunicarse con Arduino?
+
+Se usa un anemómetro que entrega una señal analógica.
+
+¿Cuál es el rango de valores que puede entregar o recibir el componente?
+
+El anemómetro entrega un valor de 0 a 1023, pero ese valor suele ser convertido a m/s para entender mejor la velocidad del viento
+
+¿Qué pines de conexión tiene el componente? Ennumerar y describir su función.
+
+Pin VCC: Alimenta el sensor. Se conecta al pin 5V de arduino.
+Pin GND: Cierra el circuito. Se conecta a el pin GND del arduino.
+Pin analógico: Entrega el valor medido del sensor. Se conecta a un pin analógico del arduino, como A0.
+
+¿Qué pin o pines de Arduino utilizan para conectarlo? ¿Por qué elegiste esos pines?
+
+Pin 5v: para alimentar el sensor.
+Pin GND: para cerrar el circuito
+Pin A0: para registrar la lectura del sensor
+
+Dibujá y explicá brevemente el esquema de conexión del componente con Arduino (incluyendo resistencias si son necesarias).
+
+https://drive.google.com/file/d/1F_NBxra1TZOBDYogKb4G3dU8sQeHKa1K/view?usp=drive_link
+
+¿Cuál es el principio de funcionamiento del componente?
+
+Depende del tipo
+
+Los mas comunes hacen que el viento giren unas elices que generan un voltaje proporcional a la velocidad del viento.
+Pero hay otros tipos, como los ultrasonicos que utilizan el tiempo que tardan en volver unas ondas de ultrasonido para medir el viento.
+
+¿Utiliza alguna librería particular para programarlo?
+
+No, no utiliza ninguna libreria
+
+¿Cómo se interpreta el dato de entrada o salida del componente en el programa?
+
+Se interpreta como un valor analógico de 0 a 1023 que puede guardarse en una variable. Cuanto mas alto el valor, mayor la velocidad
+del viento
+
+¿Qué limitaciones o precauciones eléctricas hay que tener en cuenta?
+
+Ninguna realmente, No se usan resistores si se usa un anemómetro pensado para arduino
+
+¿Cómo verificarías que el componente funciona correctamente antes de incorporarlo al proyecto final?
+
+Imprimiendo el valor registrado y forzando las elices a girar, para ver si el valor efectivamente es proporcional a la velocidad a la
+que giran las elices 
+
+Simular en Tinkercad e incluir el link de la simulación. 
+
+Este sensor no esta disponible en tinkercad
+
+En caso de aplicar, ¿qué valor o lectura esperás obtener en la simulación si el componente funciona correctamente?
+
+Se espera un valor de lectura analógico lineal y proporcional al viento.
