@@ -1,2 +1,2 @@
-El codigo debe de incluir la libreria "Adafruit_LEDBackpack.h" para controlar los neopixeles 
+El codigo debe de incluir la libreria "Adafruit_Neopixel.h" para controlar los neopixeles 
 (tiras led rgb).
