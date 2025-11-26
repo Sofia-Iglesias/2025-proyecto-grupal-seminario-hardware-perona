@@ -28,11 +28,6 @@ momento y de ahí cambiar el patrón de colores.
 
 -Boton para prender y apagar
 
--Una carcaza diseñada en 3D que contenga los actuadores del sistema de manera estetica y compacta para poder ser instalada en cualquier parte. debe de tener un "compartimiento" que contenga la tira LED con un difusor de luz para que sea estetico
-
-
-
-
 ## **`Requisitos`**
 
 Utiliza la libreria <Adafruit_Neopixel.h>
@@ -43,5 +38,5 @@ Utiliza la libreria <Adafruit_Neopixel.h>
 - Simular todo el proyecto en tinkercad
 
 ### Etapa 2:
-- Crear la carcaza fisicamente
+- Debuguear la simulación
 - Construir en la vida real
