@@ -40,3 +40,7 @@ Utiliza la libreria <Adafruit_Neopixel.h>
 ### Etapa 2:
 - Debuguear la simulación
 - Construir en la vida real
+
+# **`Link a la simulación de tinkercad`**
+
+https://www.tinkercad.com/things/hmGUIGQ1z0A-lampara-ambientadora-perona/editel
