@@ -1,0 +1,69 @@
+¿Qué tipo de dispositivo es (sensor o actuador)? Explicá brevemente su función principal.
+
+Es un sensor cuya función principal es detectar precipitaciones 
+
+¿Qué tipo de señal utiliza para comunicarse con Arduino?
+
+Puede utilizar tanto señales analógicas como digitales. En este proyecto se utilizará una conección digital
+
+¿Cuál es el rango de valores que puede entregar o recibir el componente?
+
+Si se utiliza una conección analogica, va de 0 a 1023, en cambio, si se utiliza una señal digital (como es mii caso) es o 1 o 0
+
+¿Qué pines de conexión tiene el componente? Ennumerar y describir su función.
+
+vcc: Es el pin de alimentación, se conecta a los 5 v de arduino
+GND: Es el cable a tierra, cierra el circuito y va al pin GND del arduino
+DO: Es el pin que entrega una señal digital. Va conectado a un pin digital del arduino (puede dejarse desconectado si no se busca una señal digital)
+AO: Es el pin de señal analógica. Va conectado a un pin analógico del arduino (puede dejarse desconectado si no se busca una señal analógica)
+
+¿Qué pin o pines de Arduino utilizan para conectarlo? ¿Por qué elegiste esos pines?
+
+pin VCC: Lo conectaré al pin de 5V del arduino para alimentar al sensor
+pin GND: Lo conectaré al pin GND del arduino para cerrar el circuito
+pin DO: Lo coneccctaré al pin 2 del arduino porque lee una señal digital
+
+Dibujá y explicá brevemente el esquema de conexión del componente con Arduino (incluyendo resistencias si son necesarias).
+
+https://drive.google.com/file/d/1630rDx-3kKVMjCrqBn0o_mhU84RjYqgf/view?usp=drive_link
+
+¿Cuál es el principio de funcionamiento del componente?
+
+El sensor se compone de una PCB que hace pasar corriente por unas placas metalicas que tiene en su superficie. Si el sensor está seco,
+el voltaje es mas alto, porque su resistencia es menor. Pero cuando se moja su resistencia aumenta y el voltaje baja, asi es como detecta 
+si hay o no agua.
+
+¿Utiliza alguna librería particular para programarlo?
+
+No.
+
+¿Cómo se interpreta el dato de entrada o salida del componente en el programa?
+
+Se interpreta como una entrada digital, si hay agua es LOW, si está seco es HIGH. El sensor cuenta con un pequeño potenciometro que
+permite elegir el umbral de cuando se considera HIGH y cuando LOW 
+
+¿Qué limitaciones o precauciones eléctricas hay que tener en cuenta?
+
+si se va a tener un gran periodo de tiempo funcionando, es recomendable pero no obligatorio conectar el pin de VCC a un pin digital de 
+arduino en lugar al pin de 5V, ya que de esa manera podemos encender y apagar el sensor a gusto con digitalWrite() y extender du vida
+útil, pero no lo haremos en mi proyecto
+
+¿Cómo verificarías que el componente funciona correctamente antes de incorporarlo al proyecto final?
+
+se hace una pequeña prueba en la que se derrama una pequeña cantidad de agua sobre las placas conductoras y se impirme el valor
+o se enciende un LED en funcion de lo que se detecta.
+
+Simular en Tinkercad e incluir el link de la simulación. 
+
+Este sensor no está disponible en tinkercad
+
+En caso de aplicar, ¿qué valor o lectura esperás obtener en la simulación si el componente funciona correctamente?
+
+1 o 0 dependiendo de si hay o no agua
+
+¿Cómo podría fallar el componente o cómo detectarías un mal funcionamiento en el código o en el circuito?
+
+El componente podría fallar dando lecturas erroneas (devolviendo valores erraticos o no devolviendo ningun valor). En cualquier caso,
+eso puede detectarse facilmente imprimiendo el valor que está detectando y viendo si tiene sentido.
+
+
