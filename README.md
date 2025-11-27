@@ -43,4 +43,4 @@ Utiliza la libreria <Adafruit_Neopixel.h>
 
 # **`Link a la simulación de tinkercad`**
 
-https://www.tinkercad.com/things/hmGUIGQ1z0A-lampara-ambientadora-perona/editel
+[https://www.tinkercad.com/things/hmGUIGQ1z0A-lampara-ambientadora-perona/editel](https://www.tinkercad.com/things/hmGUIGQ1z0A-lampara-ambientadora-perona/editel?returnTo=%2Fdashboard%2Fdesigns%2Fall&sharecode=F6r_O4PbzE2wgDiSMGoXJTkjC_Dep4r4fVejiyjdc5Y)
