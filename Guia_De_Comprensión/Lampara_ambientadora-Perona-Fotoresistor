@@ -56,7 +56,7 @@ entonces funciona correctamente
 
 Simular en Tinkercad e incluir el link de la simulación. 
 
-simulación: https://www.tinkercad.com/things/4RVcV27Zt9U-smashing-sango-tumelo/editel
+simulación: https://www.tinkercad.com/things/4RVcV27Zt9U-sensor-de-luz-test-perona/editel?returnTo=%2Fdashboard%2Fdesigns%2Fall&sharecode=eSD_Gax--Nu6fdRtNTJ0VIbC0EJpqeDdyBSBc6H0g9k
 
 En caso de aplicar, ¿qué valor o lectura esperás obtener en la simulación si el componente funciona correctamente?
 
@@ -67,5 +67,6 @@ El rango de lectura que llega va de 53 a 974
 1. No regístra lectura
 2. La lectura es poco precisa (da muchos saltos)
 3. el rango de valores posibles es demasiado corto.
+
 
 
